@@ -1,0 +1,10 @@
+# Generated from: bypass-ad.txt
+# Do not edit by hand — edit sources/ and re-run scripts/build.ts
+
+payload:
+  # Bypass AD（直连，不走代理）
+  - DOMAIN-SUFFIX,featureassets.org
+  - DOMAIN-SUFFIX,amplitude.com
+  - DOMAIN-SUFFIX,amazon-adsystem.com
+  - DOMAIN-SUFFIX,trkn.us
+  - DOMAIN-SUFFIX,qq.com
