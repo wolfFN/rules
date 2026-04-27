@@ -1,29 +1,7 @@
-# Generated from: dev-media.txt, https://testingcf.jsdelivr.net/gh/dler-io/Rules@main/Clash/Provider/Media/YouTube.yaml, https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTubeMusic/YouTubeMusic.yaml
+# Generated from: dev-media.txt, https://testingcf.jsdelivr.net/gh/dler-io/Rules@main/Clash/Provider/Media/YouTube.yaml, https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTubeMusic/YouTubeMusic.yaml, https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Npmjs/Npmjs.yaml, https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/GitHub/GitHub.yaml, https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Twitter/Twitter.yaml
 # Do not edit by hand — edit sources/ and re-run scripts/build.ts
 
 payload:
-  # YouTube 视频
-  - DOMAIN-SUFFIX,youtube.com
-  - DOMAIN-SUFFIX,ytimg.com
-  - DOMAIN-SUFFIX,googlevideo.com
-
-  # Twitter / X
-  - DOMAIN-SUFFIX,twitter.com
-  - DOMAIN-SUFFIX,x.com
-  - DOMAIN-SUFFIX,twimg.com
-
-  # GitHub 开发相关
-  - DOMAIN-SUFFIX,github.com
-  - DOMAIN-SUFFIX,githubusercontent.com
-  - DOMAIN-SUFFIX,raw.githubusercontent.com
-  - DOMAIN-SUFFIX,objects.githubusercontent.com
-  - DOMAIN-SUFFIX,ghcr.io
-
-  # npm / pnpm
-  - DOMAIN-SUFFIX,npmjs.org
-  - DOMAIN-SUFFIX,registry.npmjs.org
-  - DOMAIN-SUFFIX,npmmirror.com
-
   # Homebrew
   - DOMAIN-SUFFIX,brew.sh
   - DOMAIN-SUFFIX,formulae.brew.sh
@@ -40,6 +18,7 @@ payload:
   # YouTube (dler-io)
   - PROCESS-NAME,com.google.android.youtube
   - PROCESS-NAME,com.google.android.youtube.tv
+  - DOMAIN-SUFFIX,googlevideo.com
   - DOMAIN-SUFFIX,gvt1.com
   - DOMAIN-SUFFIX,video.google.com
   - DOMAIN-SUFFIX,youtu.be
@@ -78,6 +57,7 @@ payload:
   - DOMAIN-SUFFIX,youtube.co.ve
   - DOMAIN-SUFFIX,youtube.co.za
   - DOMAIN-SUFFIX,youtube.co.zw
+  - DOMAIN-SUFFIX,youtube.com
   - DOMAIN-SUFFIX,youtube.com.ar
   - DOMAIN-SUFFIX,youtube.com.au
   - DOMAIN-SUFFIX,youtube.com.az
@@ -202,6 +182,77 @@ payload:
   - DOMAIN-SUFFIX,youtube-ui.l.google.com
   - DOMAIN-SUFFIX,yt.be
   - DOMAIN-SUFFIX,yt3.ggpht.com
+  - DOMAIN-SUFFIX,ytimg.com
 
   # YouTubeMusic (blackmatrix7)
   - DOMAIN,music.youtube.com
+
+  # Npmjs (blackmatrix7)
+  - DOMAIN-SUFFIX,npm.community
+  - DOMAIN-SUFFIX,npmjs.com
+  - DOMAIN-SUFFIX,npmjs.org
+
+  # GitHub (blackmatrix7)
+  - DOMAIN-SUFFIX,atom.io
+  - DOMAIN-SUFFIX,dependabot.com
+  - DOMAIN-SUFFIX,ghcr.io
+  - DOMAIN-SUFFIX,git.io
+  - DOMAIN-SUFFIX,github-atom-io-herokuapp-com.freetls.fastly.net
+  - DOMAIN-SUFFIX,github-avatars.oss-cn-hongkong.aliyuncs.com
+  - DOMAIN-SUFFIX,github-cloud.s3.amazonaws.com
+  - DOMAIN-SUFFIX,github.blog
+  - DOMAIN-SUFFIX,github.com
+  - DOMAIN-SUFFIX,github.community
+  - DOMAIN-SUFFIX,github.dev
+  - DOMAIN-SUFFIX,github.io
+  - DOMAIN-SUFFIX,githubapp.com
+  - DOMAIN-SUFFIX,githubassets.com
+  - DOMAIN-SUFFIX,githubcopilot.com
+  - DOMAIN-SUFFIX,githubhackathon.com
+  - DOMAIN-SUFFIX,githubnext.com
+  - DOMAIN-SUFFIX,githubpreview.dev
+  - DOMAIN-SUFFIX,githubstatus.com
+  - DOMAIN-SUFFIX,githubuniverse.com
+  - DOMAIN-SUFFIX,githubusercontent.com
+  - DOMAIN-SUFFIX,myoctocat.com
+  - DOMAIN-SUFFIX,opensource.guide
+  - DOMAIN-SUFFIX,rawgit.com
+  - DOMAIN-SUFFIX,rawgithub.com
+  - DOMAIN-SUFFIX,repo.new
+  - DOMAIN-SUFFIX,thegithubshop.com
+  - DOMAIN-KEYWORD,github
+
+  # Twitter (blackmatrix7)
+  - DOMAIN-SUFFIX,ads-twitter.com
+  - DOMAIN-SUFFIX,cms-twdigitalassets.com
+  - DOMAIN-SUFFIX,grok.com
+  - DOMAIN-SUFFIX,periscope.tv
+  - DOMAIN-SUFFIX,pscp.tv
+  - DOMAIN-SUFFIX,t.co
+  - DOMAIN-SUFFIX,tellapart.com
+  - DOMAIN-SUFFIX,tweetdeck.com
+  - DOMAIN-SUFFIX,twimg.co
+  - DOMAIN-SUFFIX,twimg.com
+  - DOMAIN-SUFFIX,twimg.org
+  - DOMAIN-SUFFIX,twitpic.com
+  - DOMAIN-SUFFIX,twitter.biz
+  - DOMAIN-SUFFIX,twitter.com
+  - DOMAIN-SUFFIX,twitter.jp
+  - DOMAIN-SUFFIX,twittercommunity.com
+  - DOMAIN-SUFFIX,twitterflightschool.com
+  - DOMAIN-SUFFIX,twitterinc.com
+  - DOMAIN-SUFFIX,twitteroauth.com
+  - DOMAIN-SUFFIX,twitterstat.us
+  - DOMAIN-SUFFIX,twtrdns.net
+  - DOMAIN-SUFFIX,twttr.com
+  - DOMAIN-SUFFIX,twttr.net
+  - DOMAIN-SUFFIX,twvid.com
+  - DOMAIN-SUFFIX,vine.co
+  - DOMAIN-SUFFIX,x.com
+  - DOMAIN-KEYWORD,twitter
+  - IP-CIDR,192.133.76.0/22
+  - IP-CIDR,199.59.148.0/22
+  - IP-CIDR,199.96.56.0/21
+  - IP-CIDR,202.160.128.0/22
+  - IP-CIDR,209.237.192.0/19
+  - IP-CIDR,69.195.160.0/19
