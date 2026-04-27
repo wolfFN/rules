@@ -1,0 +1,18 @@
+# 决定哪些 sources/*.txt 拼成哪个 dist/*.yaml
+# name: 产物文件名（dist/<name>.yaml）
+# sources: 相对 sources/ 的路径列表
+
+outputs:
+  - name: AI Suite
+    sources:
+      - ai/openai.txt
+      - ai/anthropic.txt
+      - ai/google-ai.txt
+
+  - name: OpenAI
+    sources:
+      - ai/openai.txt
+
+  - name: Anthropic
+    sources:
+      - ai/anthropic.txt
