@@ -15,9 +15,11 @@ const SOURCES_DIR = join(ROOT, 'sources');
 const DIST_DIR = join(ROOT, 'dist');
 const CONFIG_PATH = join(ROOT, 'build.config.yaml');
 
+type SourceSpec = string | { url: string; comment?: string };
+
 interface OutputSpec {
   name: string;
-  sources: string[];
+  sources: SourceSpec[];
 }
 
 interface BuildConfig {
@@ -56,12 +58,39 @@ function loadGroups(relativePath: string): RuleGroup[] {
   return groups;
 }
 
-function buildOutput(spec: OutputSpec): string {
+async function loadGroupsFromUrl(
+  url: string,
+  comment?: string,
+): Promise<RuleGroup[]> {
+  const res = await fetch(url, { signal: AbortSignal.timeout(30_000) });
+  if (!res.ok) {
+    throw new Error(`Fetch ${url} failed: ${res.status} ${res.statusText}`);
+  }
+  const text = await res.text();
+  const parsed = yaml.load(text) as { payload?: unknown };
+  const payload = parsed?.payload;
+  if (!Array.isArray(payload)) {
+    throw new Error(`${url}: missing or non-array \`payload\``);
+  }
+  const rules = payload.map(item => String(item).trim()).filter(Boolean);
+  return [{ comment: comment ?? url, rules }];
+}
+
+function describeSource(s: SourceSpec): string {
+  return typeof s === 'string' ? s : s.url;
+}
+
+async function buildOutput(spec: OutputSpec): Promise<string> {
   const seen = new Set<string>();
   const blocks: RuleGroup[] = [];
 
-  for (const sourcePath of spec.sources) {
-    for (const group of loadGroups(sourcePath)) {
+  for (const source of spec.sources) {
+    const groups =
+      typeof source === 'string'
+        ? loadGroups(source)
+        : await loadGroupsFromUrl(source.url, source.comment);
+
+    for (const group of groups) {
       const fresh = group.rules.filter(r => {
         if (seen.has(r)) return false;
         seen.add(r);
@@ -73,7 +102,7 @@ function buildOutput(spec: OutputSpec): string {
   }
 
   const header = [
-    `# Generated from: ${spec.sources.join(', ')}`,
+    `# Generated from: ${spec.sources.map(describeSource).join(', ')}`,
     `# Do not edit by hand — edit sources/ and re-run scripts/build.ts`,
   ].join('\n');
 
@@ -89,7 +118,7 @@ function buildOutput(spec: OutputSpec): string {
   return `${header}\n\npayload:\n${body}\n`;
 }
 
-function main() {
+async function main() {
   const configRaw = readFileSync(CONFIG_PATH, 'utf8');
   const config = yaml.load(configRaw) as BuildConfig;
 
@@ -102,7 +131,7 @@ function main() {
   }
 
   for (const spec of config.outputs) {
-    const content = buildOutput(spec);
+    const content = await buildOutput(spec);
     const outPath = join(DIST_DIR, `${spec.name}.yaml`);
     writeFileSync(outPath, content);
     const ruleCount = content

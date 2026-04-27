@@ -1,11 +1,17 @@
 # 决定哪些 sources/*.txt 拼成哪个 dist/*.yaml
 # name: 产物文件名（dist/<name>.yaml）
-# sources: 相对 sources/ 的路径列表
+# sources: 数组项可以是
+#   - 字符串：相对 sources/ 的本地文件路径
+#   - 对象 { url, comment? }：在构建期 fetch 该上游 YAML 的 payload 列表
 
 outputs:
   - name: Dev-Media
     sources:
       - dev-media.txt
+      - url: https://testingcf.jsdelivr.net/gh/dler-io/Rules@main/Clash/Provider/Media/YouTube.yaml
+        comment: YouTube (dler-io)
+      - url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTubeMusic/YouTubeMusic.yaml
+        comment: YouTubeMusic (blackmatrix7)
 
   - name: Steam-Epic-Download
     sources:
@@ -18,6 +24,13 @@ outputs:
   - name: Microsoft
     sources:
       - microsoft.txt
+      - url: https://testingcf.jsdelivr.net/gh/dler-io/Rules@main/Clash/Provider/Microsoft.yaml
+        comment: Microsoft (dler-io)
+
+  - name: AI-Suite
+    sources:
+      - url: https://testingcf.jsdelivr.net/gh/dler-io/Rules@main/Clash/Provider/AI%20Suite.yaml
+        comment: AI-Suite (dler-io)
 
   - name: Bypass-AD
     sources:
