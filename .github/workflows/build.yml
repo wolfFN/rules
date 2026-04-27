@@ -31,13 +31,26 @@ jobs:
       - run: npm run build
 
       - name: Commit dist
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add dist/
           if git diff --staged --quiet; then
             echo "No changes in dist/"
+            echo "pushed=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "chore: regenerate rules [skip ci]"
             git push
+            echo "pushed=true" >> "$GITHUB_OUTPUT"
           fi
+
+      - name: Purge jsDelivr cache
+        if: steps.commit.outputs.pushed == 'true'
+        run: |
+          for f in dist/*.yaml; do
+            url="https://purge.jsdelivr.net/gh/${{ github.repository }}@master/$f"
+            echo "PURGE $url"
+            curl -fsSL "$url" || echo "  (purge failed, continuing)"
+            echo
+          done
