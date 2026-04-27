@@ -6,3 +6,19 @@ outputs:
   - name: Dev-Media
     sources:
       - dev-media.txt
+
+  - name: Steam-Epic-Download
+    sources:
+      - steam-epic-download.txt
+
+  - name: Steam
+    sources:
+      - steam.txt
+
+  - name: Microsoft
+    sources:
+      - microsoft.txt
+
+  - name: Bypass-AD
+    sources:
+      - bypass-ad.txt

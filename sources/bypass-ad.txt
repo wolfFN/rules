@@ -1,0 +1,6 @@
+# Bypass AD（直连，不走代理）
+DOMAIN-SUFFIX,featureassets.org
+DOMAIN-SUFFIX,amplitude.com
+DOMAIN-SUFFIX,amazon-adsystem.com
+DOMAIN-SUFFIX,trkn.us
+DOMAIN-SUFFIX,qq.com

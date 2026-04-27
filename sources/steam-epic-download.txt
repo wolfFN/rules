@@ -1,0 +1,9 @@
+# Steam / Epic 下载 CDN
+DOMAIN-SUFFIX,fastly-edge.com
+DOMAIN-SUFFIX,datarouter.ol.epicgames.com
+DOMAIN-SUFFIX,steamcontent.com
+DOMAIN-SUFFIX,fastly.net
+DOMAIN-SUFFIX,akamaihd.net
+DOMAIN-SUFFIX,edgekey.net
+DOMAIN-SUFFIX,edgesuite.net
+DOMAIN-SUFFIX,steamstatic.com

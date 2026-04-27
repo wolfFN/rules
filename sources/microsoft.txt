@@ -1,0 +1,9 @@
+# Microsoft
+DOMAIN-SUFFIX,azureedge.net
+DOMAIN-SUFFIX,microsoft.com
+DOMAIN-SUFFIX,windowsupdate.com
+DOMAIN-SUFFIX,windows.com
+DOMAIN-SUFFIX,office.com
+DOMAIN-SUFFIX,visualstudio.com
+DOMAIN-SUFFIX,vscode-cdn.net
+DOMAIN-SUFFIX,trafficmanager.net
