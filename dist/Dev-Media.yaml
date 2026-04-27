@@ -2,13 +2,6 @@
 # Do not edit by hand — edit sources/ and re-run scripts/build.ts
 
 payload:
-  # CDN, Video
-  - DOMAIN-SUFFIX,mushroomtrack.com
-  - DOMAIN-SUFFIX,surrit.com
-  - DOMAIN-SUFFIX,nineyu.com
-  - DOMAIN-KEYWORD,roum
-  - DOMAIN-KEYWORD,rmcdn
-
   # YouTube 视频
   - DOMAIN-SUFFIX,youtube.com
   - DOMAIN-SUFFIX,ytimg.com
@@ -34,3 +27,12 @@ payload:
   # Homebrew
   - DOMAIN-SUFFIX,brew.sh
   - DOMAIN-SUFFIX,formulae.brew.sh
+
+  # CDN, Video
+  - DOMAIN-SUFFIX,mushroomtrack.com
+  - DOMAIN-SUFFIX,surrit.com
+  - DOMAIN-SUFFIX,nineyu.com
+  - DOMAIN-SUFFIX,jable.tv
+  - DOMAIN-KEYWORD,roum
+  - DOMAIN-KEYWORD,rmcdn
+  - DOMAIN-KEYWORD,missav

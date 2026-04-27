@@ -8,3 +8,6 @@ payload:
   - DOMAIN-SUFFIX,amazon-adsystem.com
   - DOMAIN-SUFFIX,trkn.us
   - DOMAIN-SUFFIX,qq.com
+
+  # Cdn
+  - DOMAIN-SUFFIX,alonestreaming.com
