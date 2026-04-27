@@ -3,16 +3,6 @@
 # sources: 相对 sources/ 的路径列表
 
 outputs:
-  - name: AI Suite
+  - name: Dev-Media
     sources:
-      - ai/openai.txt
-      - ai/anthropic.txt
-      - ai/google-ai.txt
-
-  - name: OpenAI
-    sources:
-      - ai/openai.txt
-
-  - name: Anthropic
-    sources:
-      - ai/anthropic.txt
+      - dev-media.txt
