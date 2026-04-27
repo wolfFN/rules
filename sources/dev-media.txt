@@ -1,25 +1,3 @@
-# YouTube 视频
-DOMAIN-SUFFIX,youtube.com
-DOMAIN-SUFFIX,ytimg.com
-DOMAIN-SUFFIX,googlevideo.com
-
-# Twitter / X
-DOMAIN-SUFFIX,twitter.com
-DOMAIN-SUFFIX,x.com
-DOMAIN-SUFFIX,twimg.com
-
-# GitHub 开发相关
-DOMAIN-SUFFIX,github.com
-DOMAIN-SUFFIX,githubusercontent.com
-DOMAIN-SUFFIX,raw.githubusercontent.com
-DOMAIN-SUFFIX,objects.githubusercontent.com
-DOMAIN-SUFFIX,ghcr.io
-
-# npm / pnpm
-DOMAIN-SUFFIX,npmjs.org
-DOMAIN-SUFFIX,registry.npmjs.org
-DOMAIN-SUFFIX,npmmirror.com
-
 # Homebrew
 DOMAIN-SUFFIX,brew.sh
 DOMAIN-SUFFIX,formulae.brew.sh
