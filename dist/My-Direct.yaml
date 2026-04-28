@@ -1,0 +1,6 @@
+# Generated from: my-direct.txt
+# Do not edit by hand — edit sources/ and re-run scripts/build.ts
+
+payload:
+  # imgix
+  - DOMAIN-SUFFIX,imgix.net
