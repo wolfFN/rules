@@ -1,2 +1,2 @@
 # statsig
-DOMAIN-SUFFIX,statsigcdn.com,PROXY
+DOMAIN-SUFFIX,statsigcdn.com
