@@ -1,0 +1,2 @@
+# imgix
+DOMAIN-SUFFIX,imgix.net,DIRECT
