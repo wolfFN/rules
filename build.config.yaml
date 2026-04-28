@@ -42,14 +42,10 @@ outputs:
     sources:
       - bypass-ad.txt
 
-  - name: Proxy
+  - name: My-Proxy
     sources:
-      - proxy.txt
-      - url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt
-        comment: Proxy (Loyalsoldier)
+      - my-proxy.txt
 
-  - name: Direct
+  - name: My-Direct
     sources:
-      - direct.txt
-      - url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt
-        comment: Direct (Loyalsoldier)
+      - my-direct.txt
