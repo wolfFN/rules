@@ -3,7 +3,7 @@
 
 payload:
   # imgix
-  - DOMAIN-SUFFIX,imgix.net,DIRECT
+  - DOMAIN-SUFFIX,imgix.net
 
   # Direct (Loyalsoldier)
   - 265.com

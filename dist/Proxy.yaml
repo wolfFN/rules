@@ -3,7 +3,7 @@
 
 payload:
   # statsig
-  - DOMAIN-SUFFIX,statsigcdn.com,PROXY
+  - DOMAIN-SUFFIX,statsigcdn.com
 
   # Proxy (Loyalsoldier)
   - 1password.drift.click
