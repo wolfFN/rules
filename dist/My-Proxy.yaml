@@ -1,5 +1,9 @@
 # Generated from: my-proxy.txt
 # Do not edit by hand — edit sources/ and re-run scripts/build.ts
+#
+# GitHub:        https://github.com/wolfFN/rules/blob/master/dist/My-Proxy.yaml
+# jsDelivr:      https://cdn.jsdelivr.net/gh/wolfFN/rules@master/dist/My-Proxy.yaml
+# jsDelivr purge: https://purge.jsdelivr.net/gh/wolfFN/rules@master/dist/My-Proxy.yaml
 
 payload:
   # statsig

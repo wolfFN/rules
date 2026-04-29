@@ -1,5 +1,9 @@
 # Generated from: bypass-ad.txt
 # Do not edit by hand — edit sources/ and re-run scripts/build.ts
+#
+# GitHub:        https://github.com/wolfFN/rules/blob/master/dist/Bypass-AD.yaml
+# jsDelivr:      https://cdn.jsdelivr.net/gh/wolfFN/rules@master/dist/Bypass-AD.yaml
+# jsDelivr purge: https://purge.jsdelivr.net/gh/wolfFN/rules@master/dist/Bypass-AD.yaml
 
 payload:
   # Bypass AD（直连，不走代理）
