@@ -101,9 +101,14 @@ async function buildOutput(spec: OutputSpec): Promise<string> {
     }
   }
 
+  const fileName = `${spec.name}.yaml`;
   const header = [
     `# Generated from: ${spec.sources.map(describeSource).join(', ')}`,
     `# Do not edit by hand — edit sources/ and re-run scripts/build.ts`,
+    `#`,
+    `# GitHub:        https://github.com/wolfFN/rules/blob/master/dist/${fileName}`,
+    `# jsDelivr:      https://cdn.jsdelivr.net/gh/wolfFN/rules@master/dist/${fileName}`,
+    `# jsDelivr purge: https://purge.jsdelivr.net/gh/wolfFN/rules@master/dist/${fileName}`,
   ].join('\n');
 
   const body = blocks
