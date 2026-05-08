@@ -20,6 +20,15 @@ payload:
   - DOMAIN-KEYWORD,roum
   - DOMAIN-KEYWORD,rmcdn
   - DOMAIN-KEYWORD,missav
+  - DOMAIN-SUFFIX,cloudflarestorage.com
+
+  # Updates
+  - DOMAIN-SUFFIX,downloads.cursor.com
+  - DOMAIN-SUFFIX,downloads.claude.ai
+  - DOMAIN-SUFFIX,cursor-cdn.com
+
+  # Linear
+  - DOMAIN-SUFFIX,linear.app
 
   # YouTube (dler-io)
   - PROCESS-NAME,com.google.android.youtube

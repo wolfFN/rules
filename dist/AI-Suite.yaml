@@ -1,4 +1,4 @@
-# Generated from: https://testingcf.jsdelivr.net/gh/dler-io/Rules@main/Clash/Provider/AI%20Suite.yaml
+# Generated from: ai-suite.txt, https://testingcf.jsdelivr.net/gh/dler-io/Rules@main/Clash/Provider/AI%20Suite.yaml
 # Do not edit by hand — edit sources/ and re-run scripts/build.ts
 #
 # GitHub:        https://github.com/wolfFN/rules/blob/master/dist/AI-Suite.yaml
@@ -6,6 +6,9 @@
 # jsDelivr purge: https://purge.jsdelivr.net/gh/wolfFN/rules@master/dist/AI-Suite.yaml
 
 payload:
+  # statsig
+  - DOMAIN-SUFFIX,statsigcdn.com
+
   # AI-Suite (dler-io)
   - DOMAIN-SUFFIX,augment.com
   - DOMAIN-SUFFIX,augmentcode.com
