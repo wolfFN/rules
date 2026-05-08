@@ -15,7 +15,7 @@ payload:
   - DOMAIN-SUFFIX,surrit.com
   - DOMAIN-SUFFIX,nineyu.com
   - DOMAIN-SUFFIX,jable.tv
-  - DOMAIN-SUFFIX,javbus.com
+  - DOMAIN-KEYWORD,javbus
   - DOMAIN-SUFFIX,javcdn.cc
   - DOMAIN-KEYWORD,roum
   - DOMAIN-KEYWORD,rmcdn
