@@ -35,16 +35,9 @@ outputs:
 
   - name: AI-Suite
     sources:
+      - ai-suite.txt
       - url: https://testingcf.jsdelivr.net/gh/dler-io/Rules@main/Clash/Provider/AI%20Suite.yaml
         comment: AI-Suite (dler-io)
-
-  - name: Bypass-AD
-    sources:
-      - bypass-ad.txt
-
-  - name: My-Proxy
-    sources:
-      - my-proxy.txt
 
   - name: My-Direct
     sources:
