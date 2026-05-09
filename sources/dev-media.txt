@@ -18,6 +18,7 @@ DOMAIN-SUFFIX,cloudflarestorage.com
 DOMAIN-SUFFIX,downloads.cursor.com
 DOMAIN-SUFFIX,downloads.claude.ai
 DOMAIN-SUFFIX,cursor-cdn.com
+DOMAIN-SUFFIX,releases.warp.dev
 
 # Linear
 DOMAIN-SUFFIX,linear.app
