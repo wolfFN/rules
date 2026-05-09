@@ -2,7 +2,9 @@
 # name: 产物文件名（dist/<name>.yaml）
 # sources: 数组项可以是
 #   - 字符串：相对 sources/ 的本地文件路径
-#   - 对象 { url, comment? }：在构建期 fetch 该上游 YAML 的 payload 列表
+#   - 对象 { url, comment?, stripTypes? }：在构建期 fetch 该上游 YAML 的 payload 列表
+#     stripTypes 可选，按规则类型（不区分大小写）过滤掉上游里的某些条目，例如
+#     [IP-CIDR, IP-CIDR6] 用来去掉只针对客户端 IP 兜底但容易被 DNS 污染误伤的规则
 
 outputs:
   - name: Dev-Media
@@ -18,6 +20,9 @@ outputs:
         comment: GitHub (blackmatrix7)
       - url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Twitter/Twitter.yaml
         comment: Twitter (blackmatrix7)
+        # 上游 IP-CIDR 是 Twitter 自家 IP 段，但 DNS 污染会把别的域名（如 chatgpt.com）
+        # 解析到这些段，导致误命中。我们只保留域名规则。
+        stripTypes: [IP-CIDR, IP-CIDR6]
 
   - name: Steam-Epic-Download
     sources:

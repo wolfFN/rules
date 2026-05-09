@@ -15,7 +15,9 @@ const SOURCES_DIR = join(ROOT, 'sources');
 const DIST_DIR = join(ROOT, 'dist');
 const CONFIG_PATH = join(ROOT, 'build.config.yaml');
 
-type SourceSpec = string | { url: string; comment?: string };
+type SourceSpec =
+  | string
+  | { url: string; comment?: string; stripTypes?: string[] };
 
 interface OutputSpec {
   name: string;
@@ -61,6 +63,7 @@ function loadGroups(relativePath: string): RuleGroup[] {
 async function loadGroupsFromUrl(
   url: string,
   comment?: string,
+  stripTypes?: string[],
 ): Promise<RuleGroup[]> {
   const res = await fetch(url, { signal: AbortSignal.timeout(30_000) });
   if (!res.ok) {
@@ -72,7 +75,15 @@ async function loadGroupsFromUrl(
   if (!Array.isArray(payload)) {
     throw new Error(`${url}: missing or non-array \`payload\``);
   }
-  const rules = payload.map(item => String(item).trim()).filter(Boolean);
+  const stripped = new Set((stripTypes ?? []).map(t => t.toUpperCase()));
+  const rules = payload
+    .map(item => String(item).trim())
+    .filter(Boolean)
+    .filter(rule => {
+      if (stripped.size === 0) return true;
+      const type = rule.split(',', 1)[0].trim().toUpperCase();
+      return !stripped.has(type);
+    });
   return [{ comment: comment ?? url, rules }];
 }
 
@@ -88,7 +99,11 @@ async function buildOutput(spec: OutputSpec): Promise<string> {
     const groups =
       typeof source === 'string'
         ? loadGroups(source)
-        : await loadGroupsFromUrl(source.url, source.comment);
+        : await loadGroupsFromUrl(
+            source.url,
+            source.comment,
+            source.stripTypes,
+          );
 
     for (const group of groups) {
       const fresh = group.rules.filter(r => {
