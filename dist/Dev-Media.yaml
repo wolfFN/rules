@@ -27,6 +27,7 @@ payload:
   - DOMAIN-SUFFIX,downloads.claude.ai
   - DOMAIN-SUFFIX,cursor-cdn.com
   - DOMAIN-SUFFIX,releases.warp.dev
+  - DOMAIN-SUFFIX,downloads.slack-edge.com
 
   # Linear
   - DOMAIN-SUFFIX,linear.app
