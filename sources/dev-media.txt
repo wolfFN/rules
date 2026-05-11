@@ -4,6 +4,7 @@ DOMAIN-SUFFIX,formulae.brew.sh
 
 # CDN, Video
 DOMAIN-SUFFIX,mushroomtrack.com
+DOMAIN-SUFFIX,alonestreaming.com
 DOMAIN-SUFFIX,surrit.com
 DOMAIN-SUFFIX,nineyu.com
 DOMAIN-SUFFIX,jable.tv
