@@ -14,15 +14,34 @@ payload:
   - DOMAIN-SUFFIX,augmentcode.com
   - DOMAIN-SUFFIX,ai.com
   - DOMAIN-SUFFIX,chatgpt.com
+  - DOMAIN-SUFFIX,ct.sendgrid.net
+  - DOMAIN-SUFFIX,featureassets.org
+  - DOMAIN-SUFFIX,featuregates.org
+  - DOMAIN-SUFFIX,intercom.io
+  - DOMAIN-SUFFIX,intercomcdn.com
+  - DOMAIN-SUFFIX,oaistatic.com
+  - DOMAIN-SUFFIX,oaiusercontent.com
   - DOMAIN-SUFFIX,openai.com
+  - DOMAIN-SUFFIX,prodregistryv2.org
+  - DOMAIN-SUFFIX,statsig.com
+  - DOMAIN-SUFFIX,statsigapi.net
+  - DOMAIN,cdn.openaimerge.com
+  - DOMAIN,cdn.workos.com
+  - DOMAIN,challenges.cloudflare.com
   - DOMAIN,chat.openai.com.cdn.cloudflare.net
+  - DOMAIN,forwarder.workos.com
+  - DOMAIN,humb.apple.com
+  - DOMAIN,images.workoscdn.com
+  - DOMAIN,js.stripe.com
+  - DOMAIN,o207216.ingest.sentry.io
+  - DOMAIN,o33249.ingest.sentry.io
   - DOMAIN,openaiapi-site.azureedge.net
   - DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
   - DOMAIN,openaicomproductionae4b.blob.core.windows.net
   - DOMAIN,production-openaicom-storage.azureedge.net
-  - DOMAIN-SUFFIX,cdn.oaistatic.com
-  - DOMAIN-SUFFIX,oaiusercontent.com
-  - DOMAIN,o33249.ingest.sentry.io
+  - DOMAIN,rum.browser-intake-datadoghq.com
+  - DOMAIN,setup.workos.com
+  - DOMAIN,workos.imgix.net
   - DOMAIN-SUFFIX,cerebras.ai
   - DOMAIN-SUFFIX,chorus.sh
   - DOMAIN-SUFFIX,anthropic.com
@@ -77,7 +96,6 @@ payload:
   - DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
   - DOMAIN-SUFFIX,smoot.apple.com
   - DOMAIN-SUFFIX,sora.com
-  - DOMAIN,sora-cdn.oaistatic.com
   - DOMAIN-SUFFIX,trae.ai
   - DOMAIN-SUFFIX,traeapi.us
   - DOMAIN-SUFFIX,windsurf.com
