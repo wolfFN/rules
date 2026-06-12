@@ -1,2 +1,7 @@
 # statsig
 DOMAIN-SUFFIX,statsigcdn.com
+DOMAIN-SUFFIX,statsig.com
+DOMAIN-SUFFIX,statsigapi.net
+DOMAIN-SUFFIX,assetsconfigcdn.org
+DOMAIN-SUFFIX,featureassets.org
+DOMAIN-SUFFIX,prodregistryv2.org
