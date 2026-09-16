@@ -1,7 +1,23 @@
-# Steam
+# Steam 商店 / 社区 / API（走代理）
 DOMAIN-SUFFIX,steampowered.com
-DOMAIN-SUFFIX,steam-chat.com
+DOMAIN-SUFFIX,steamcommunity.com
 DOMAIN-SUFFIX,steamgames.com
 DOMAIN-SUFFIX,steamusercontent.com
+DOMAIN-SUFFIX,steam-chat.com
+DOMAIN-SUFFIX,s.team
+DOMAIN-SUFFIX,steamdeck.com
+DOMAIN-SUFFIX,valvesoftware.com
+
+# Steam 静态资源（图片 / 脚本，经 Cloudflare 与 Akamai 分发，国内直连不稳定）
+DOMAIN-SUFFIX,steamstatic.com
+DOMAIN,steamcdn-a.akamaihd.net
+DOMAIN,steamstore-a.akamaihd.net
+DOMAIN,steamcommunity-a.akamaihd.net
+DOMAIN,steamusercontent-a.akamaihd.net
+DOMAIN,steamuserimages-a.akamaihd.net
+DOMAIN,steamvideo-a.akamaihd.net
+DOMAIN,steambroadcast.akamaized.net
+DOMAIN,steammobile.akamaized.net
+
+# 第三方 Steam 状态站
 DOMAIN-SUFFIX,steamstat.us
-DOMAIN-SUFFIX,steamcommunity.com

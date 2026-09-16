@@ -1,9 +1,37 @@
-# Steam / Epic 下载 CDN
-DOMAIN-SUFFIX,fastly-edge.com
-DOMAIN-SUFFIX,datarouter.ol.epicgames.com
+# Steam 游戏下载 CDN（走直连，参考 blackmatrix7/ios_rule_script 的 SteamCN 列表）
 DOMAIN-SUFFIX,steamcontent.com
-DOMAIN-SUFFIX,fastly.net
-DOMAIN-SUFFIX,akamaihd.net
-DOMAIN-SUFFIX,edgekey.net
-DOMAIN-SUFFIX,edgesuite.net
-DOMAIN-SUFFIX,steamstatic.com
+DOMAIN-SUFFIX,steamserver.net
+DOMAIN-SUFFIX,steamchina.com
+DOMAIN,steampipe.akamaized.net
+DOMAIN,steampipe-partner.akamaized.net
+DOMAIN,steampipe-kr.akamaized.net
+
+# Steam 客户端连接管理（登录 / 会话），国内可直连；与 Steam 组的 steampowered.com 重叠，本组需排在 Steam 组之前
+DOMAIN-SUFFIX,cm.steampowered.com
+
+# Steam 国内合作 CDN（完美世界 / 各云厂商）
+DOMAIN,dl.steam.clngaa.com
+DOMAIN,dl.steam.ksyna.com
+DOMAIN,st.dl.bscstorage.net
+DOMAIN,st.dl.eccdnx.com
+DOMAIN,st.dl.pinyuncloud.com
+DOMAIN,steampipe.steamcontent.tnkjmec.com
+DOMAIN,steampowered.com.8686c.com
+DOMAIN,steamstatic.com.8686c.com
+DOMAIN,xz.pphimalayanrt.com
+DOMAIN-SUFFIX,wmsjsteam.com
+DOMAIN,csgo.wmsj.cn
+DOMAIN,dota2.wmsj.cn
+
+# Epic 游戏下载 CDN（走直连）；若另有 epicgames.com 走代理的规则，本组需排在其之前
+DOMAIN,download.epicgames.com
+DOMAIN,download2.epicgames.com
+DOMAIN,download3.epicgames.com
+DOMAIN,download4.epicgames.com
+DOMAIN,fastly-download.epicgames.com
+DOMAIN,epicgames-download1.akamaized.net
+DOMAIN-SUFFIX,epicgamescdn.com
+DOMAIN,epicgames-download1-1251447533.file.myqcloud.com
+
+# Epic 遥测上报（非下载，直连即可）
+DOMAIN,datarouter.ol.epicgames.com
