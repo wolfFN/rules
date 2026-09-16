@@ -8,14 +8,13 @@
 payload:
   # Steam 游戏下载 CDN（走直连，参考 blackmatrix7/ios_rule_script 的 SteamCN 列表）
   - DOMAIN-SUFFIX,steamcontent.com
-  - DOMAIN-SUFFIX,steamserver.net
   - DOMAIN-SUFFIX,steamchina.com
   - DOMAIN,steampipe.akamaized.net
   - DOMAIN,steampipe-partner.akamaized.net
   - DOMAIN,steampipe-kr.akamaized.net
 
-  # Steam 客户端连接管理（登录 / 会话），国内可直连；与 Steam 组的 steampowered.com 重叠，本组需排在 Steam 组之前
-  - DOMAIN-SUFFIX,cm.steampowered.com
+  # Steam 客户端 CM 长连接（登录 / 好友 / 鉴权 / 获取下载服务器列表），Valve 自有机房，非 CDN；登录异常时优先怀疑此条
+  - DOMAIN-SUFFIX,steamserver.net
 
   # Steam 国内合作 CDN（完美世界 / 各云厂商）
   - DOMAIN,dl.steam.clngaa.com
