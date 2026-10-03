@@ -75,6 +75,7 @@ payload:
   - IP-CIDR,74.248.148.7/32,no-resolve
   - DOMAIN-SUFFIX,chorus.sh
   - DOMAIN-SUFFIX,anthropic.com
+  - DOMAIN-SUFFIX,clau.de
   - DOMAIN-SUFFIX,claude.ai
   - DOMAIN-SUFFIX,claude.com
   - DOMAIN-SUFFIX,claudeusercontent.com
@@ -150,6 +151,7 @@ payload:
   - DOMAIN-SUFFIX,copilot.microsoft.com
   - DOMAIN,login.live.com
   - DOMAIN,login.microsoftonline.com
+  - DOMAIN-SUFFIX,mistral.ai
   - DOMAIN-SUFFIX,openart.ai
   - DOMAIN-SUFFIX,openrouter.ai
   - DOMAIN-SUFFIX,perplexity.ai
