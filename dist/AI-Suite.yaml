@@ -188,6 +188,7 @@ payload:
   - DOMAIN,q.eu-central-1.amazonaws.com
   - DOMAIN,q.us-east-1.amazonaws.com
   - DOMAIN-SUFFIX,meta.ai
+  - DOMAIN-SUFFIX,muse.ai
   - DOMAIN-SUFFIX,copilot.cloud.microsoft
   - DOMAIN-SUFFIX,copilot.com
   - DOMAIN-SUFFIX,copilot.microsoft.com
