@@ -89,11 +89,6 @@ payload:
   - DOMAIN-SUFFIX,cursorapi.com
   - DOMAIN-SUFFIX,cursorvm.com
   - DOMAIN,accounts.spacex.ai
-  - DOMAIN,accounts.x.ai
-  - DOMAIN,auth.grok.com
-  - DOMAIN,auth.grokipedia.com
-  - DOMAIN,auth.grokusercontent.com
-  - DOMAIN,auth.x.ai
   - DOMAIN-SUFFIX,diabrowser.com
   - DOMAIN-SUFFIX,diabrowser.engineering
   - DOMAIN-SUFFIX,dify.ai
@@ -208,3 +203,7 @@ payload:
   - DOMAIN-SUFFIX,codeiumdata.com
   - DOMAIN-SUFFIX,windsurf.com
   - DOMAIN-SUFFIX,zed.dev
+  - DOMAIN-SUFFIX,grok.com
+  - DOMAIN-SUFFIX,grokipedia.com
+  - DOMAIN-SUFFIX,grokusercontent.com
+  - DOMAIN-SUFFIX,x.ai
